@@ -8,8 +8,8 @@ from dash import dash_table
 
 
 # Carica il file CSV in un dataframe pandas
-df = pd.read_csv("C://Users/gianz/Desktop/Project_Work/Dataset_def/Tab_macro(inv_divisi)_mod.csv")
-df2 = pd.read_csv("C://Users/gianz/Desktop/Project_Work/Dataset_def/Tab_macro(lai_divisi).csv")
+df = pd.read_csv("C://Users/gianz/Desktop/Dash_GoodWill/Tab_macro(inv_divisi)_mod.csv")
+df2 = pd.read_csv("C://Users/gianz/Desktop/Dash_GoodWill/Tab_macro(lai_divisi).csv")
 
 # Crea l'app Dash
 app = dash.Dash(__name__, external_stylesheets=['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'])

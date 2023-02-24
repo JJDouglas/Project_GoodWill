@@ -6,10 +6,11 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash import dash_table
 
-
+url = "https://projectgoodwilllink.s3.eu-south-1.amazonaws.com/Tab_macro(inv_divisi)_mod.csv"
+url2 = "https://projectgoodwilllink.s3.eu-south-1.amazonaws.com/Tab_macro(lai_divisi).csv"
 # Carica il file CSV in un dataframe pandas
-df = pd.read_csv("C://Users/gianz/Desktop/Dash_GoodWill/Tab_macro(inv_divisi)_mod.csv")
-df2 = pd.read_csv("C://Users/gianz/Desktop/Dash_GoodWill/Tab_macro(lai_divisi).csv")
+df = pd.read_csv(url)
+df2 = pd.read_csv(url2)
 
 # Crea l'app Dash
 app = dash.Dash(__name__, external_stylesheets=['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'])

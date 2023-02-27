@@ -13,7 +13,7 @@ df = pd.read_csv(url)
 df2 = pd.read_csv(url2)
 
 # Crea l'app Dash
-app = dash.Dash(__name__, external_stylesheets=['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title="PROJECT GOODWILL"
 server = app.server     # dashtools per il deploy 
 
